@@ -69,7 +69,7 @@ namespace ELECT2_QUIZ1.Controllers
                     Id = 6,
                     Title = "Manny Pacquiao Officially Announces Rematch Against Floyd Mayweather",
                     Content = "Manny Pacquiao vs. Floyd Mayweather 2 is officially in the cards.\n\nThe announcement was made by the Filipino boxer and RIZIN Fighting Federation head Nobuyiki Sakakibara at a New Year’s Eve event at the Saitama Super Arena in Japan. Pacquiao first apologized to the crowd as he was not involved in any bouts in 2023 after signing a contract with RIZIN, then confirmed that the “big fight” against Mayweather will take place in Japan in 2024. “I’m excited for that. Thank you,” he said, and did not reveal any additional details.\n\nAs per Bloody Elbow, the rematch of their 2015 bout will most likely be an exhibition and not a professional match. Both boxers have already professionally retired, and have only gone back in the ring for exhibition matches ever since.\n\nTheir 2015 fight is the best-selling pay-per-view bout in history with approximately 4.6 million buys, and saw Mayweather win via unanimous decision at the MGM Grand Garden Arena in Las Vegas.",
-                    MainImage = "img/BLOG-5.png",
+                    MainImage = "img/BLOG-6.png",
                     Writer = "Sophie Caraan",
                     Year = 2024,
                     Month = 2,

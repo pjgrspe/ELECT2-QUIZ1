@@ -48,10 +48,18 @@ body {
     background-color: #1a1a1a
 }
 
+#hero_page {
+    background-image: url('/img/BG-04.png'); /* Replace with the file path */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Or contain, depending on the desired effect */
+}
+
+
 .card {
-    background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
@@ -115,22 +123,27 @@ h2 {
     width: 50%;
     margin-top: 20px;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 
 #blogSearch {
-    width: 50%; 
+    width: 50%;
     padding: 10px 15px;
     margin-bottom: 20px;
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f1f1e6;
 }
 
 #blogSearch:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #f1f1e6;
     box-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3); 
 }
 
@@ -194,8 +207,8 @@ h2 {
 }
 
 .glass-background {
-    background-color: rgba(255, 255, 255, 0.07);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(13px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px; 
     padding: 20px; 
