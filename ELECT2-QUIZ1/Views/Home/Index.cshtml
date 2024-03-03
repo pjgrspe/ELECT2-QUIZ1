@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model BlogsModel
+@*LANDING PAGE SECTION*@
+<section class="vh-100" id="hero_page">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 id="main-text" class="text-center mb-4">
+                    Ahead of the Curve: </br>Your Early Access Pass
+                </h1>
+                <h2 class="text-center mb-5">
+                    Get exclusive insights on the ideas, icons, and obsessions of the moment.
+                </h2>
+                
+                <button id="myworks_button" class="btn btn-primary btn-lg mt-4 rounded-3" onclick="scrollToNextSection()">
+                    Explore <i class="ms-1 fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+@*BLOG SECTION*@
+<section class="d-flex flex-column" id="blogs_page">
+    <div class="container flex-grow-1 d-flex flex-column">
+        <div class="row h-100 align-items-center flex-grow-1">
+            @*CONTENT*@
+            @* TITLE *@
+            <div class="col-12 text-center">
+                <div class="fade-in-element mt-4 mb-4">
+                    <h3 class="text-center showcase-main-text">QUIZ 1 BLOGS</h3>
+                    <h4 class="text-center mt-2 showcase-sub-text">
+                        Our collection of Blogs.
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12 text-center mb-3">
+                <input class="rounded-1" type="text" id="blogSearch" placeholder="Search blogs...">
+            </div>
+            @* ALL BLOGS *@
+            <div class="row justify-content-center">
+                @* BLOG 1 *@
+                <div class="card ms-3 me-3 mb-3" style="width: 20rem;" id="blog-1">
+                    <img src="~/img/BLOG-1.png" class="card-img-top mt-3" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Four 'One Piece'-Themed PUMA Suede Sneakers Are Coming</h5>
+                        <p class="card-text">PUMA is reigniting its partnership with One Piece by offering its Suede sneaker by the brand.</p>
+                        <a href="@Url.Action("Index", "Blogs", new { year = 2024, month = 2, slug = "one-piece-puma-suede-sneakers" })" class="btn btn-primary" id="btn-card">Read more</a>
+                    </div>
+                </div>
+                @* BLOG 2 *@
+                <div class="card ms-3 me-3 mb-3" style="width: 20rem;" id="blog-2">
+                    <img src="~/img/BLOG-2.png" class="card-img-top mt-3" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ye and Ty Dolla $ign Officially Release Collab Album</h5>
+                        <p class="card-text">¥$ have officially released the first volume of their long-awaited collaborative album Vultures.</p>
+                        <a href="@Url.Action("Index", "Blogs", new { year = 2024, month = 2, slug = "ye-and-ty-dolla-album" })" class="btn btn-primary" id="btn-card">Read more</a>
+                    </div>
+                </div>
+                @* BLOG 3 *@
+                <div class="card ms-3 me-3 mb-3" style="width: 20rem;" id="blog-3">
+                    <img src="~/img/BLOG-3.png" class="card-img-top mt-3" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Buzz and Woody Come to Life on the Crocs Classic Clog</h5>
+                        <p class="card-text">Utilizing the Classic Clog, fan-favorite franchises have seen their characters outfit the popular silhouette.</p>
+                        <a href="@Url.Action("Index", "Blogs", new { year = 2024, month = 1, slug = "buzz-and-woody-crocs" })" class="btn btn-primary" id="btn-card">Read more</a>
+                    </div>
+                </div>
+                @* BLOG 4 *@
+                <div class="card ms-3 me-3 mb-3" style="width: 20rem;" id="blog-4">
+                    <img src="~/img/BLOG-4.png" class="card-img-top mt-3" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Louis Vuitton FW24 Collection Is a LVERS' Vision of the American Western Wardrobe</h5>
+                        <p class="card-text">Pharrell Williams is back with another show-stopping presentation of his latest collection.</p>
+                        <a href="@Url.Action("Index", "Blogs", new { year = 2024, month = 1, slug = "pharell-lv-fw24-collection" })" class="btn btn-primary" id="btn-card">Read more</a>
+                    </div>
+                </div>
+                @* BLOG 5 *@
+                <div class="card ms-3 me-3 mb-3" style="width: 20rem;" id="blog-5">
+                    <img src="~/img/BLOG-5.png" class="card-img-top mt-3" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Official Images of the ‘Naruto’ x ASICS GEL-NYC</h5>
+                        <p class="card-text">Now a new collaboration has surfaced as Naruto has merged with ASICS’ popular GEL-NYC silhouette. This isn’t the first time the two entities have teamed up.”</p>
+                        <a href="@Url.Action("Index", "Blogs", new { year = 2024, month = 1, slug = "naruto-x-asics-gel-nyc" })" class="btn btn-primary" id="btn-card">Read more</a>
+                    </div>
+                </div>
+                @* BLOG 6 *@
+                <div class="card ms-3 me-3 mb-3" style="width: 20rem;" id="blog-6">
+                    <img src="~/img/BLOG-6.png" class="card-img-top mt-3" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Manny Pacquiao Officially Announces Rematch Against Floyd Mayweather</h5>
+                        <p class="card-text">Manny Pacquiao vs. Floyd Mayweather 2 is officially in the cards. The announcement was made by the Filipino boxer at the Saitama Super Arena in Japan.</p>
+                        <a href="@Url.Action("Index", "Blogs", new { year = 2024, month = 2, slug = "manny-vs-floyd-announcement" })" class="btn btn-primary" id="btn-card">Read more</a>
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="noContentMessage" style="display: none;">
+                    <div class="col-12 text-center">
+                        <p>No blogs found. Try a different search term.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

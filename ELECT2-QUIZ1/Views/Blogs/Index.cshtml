@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model BlogsModel
+@*LANDING PAGE SECTION*@
+<section class="d-flex flex-column" id="hero_page">
+    <div class="glass-background">
+        <div class="container flex-grow-1 d-flex flex-column">
+            <div class="row h-100 align-items-center flex-grow-1">
+                <div class="col-12 text-center">
+                    <img src="~/@Model.MainImage" alt="Main Image" id="mainimage">
+                    <h1 class="mb-4 article-margin" id="main-text-blog">
+                        @Model.Title
+                    </h1>
+                    <p id="writer-txt">Written by @Model.Writer</p>
+                    <p class="article-margin" id="sub-text-blog" style="white-space: pre-wrap;">@Model.Content</p>
+                    <a id="article_button" class="btn btn-outline-secondary rounded-3 btn-lg mt-4 mb-3 rise-up-button" href="@Url.Action("Index", "Home")">
+                        Back to Home <i class="ms-1 fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
